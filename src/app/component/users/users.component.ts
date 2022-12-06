@@ -35,7 +35,7 @@ deleteUser(email:string){
   this._service.DeleteUser(email).subscribe(
     (res)=>{
       // window.location.href="https://tohotels.app/component/register";
-      this._Router.navigate(['/dashboard']);
+      this.getAllUser();
 
 
 
